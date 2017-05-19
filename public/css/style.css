@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: black; }
+
+.App {
+  background-color: #fafafa;
+  height: 100%;
+  text-align: center; }
+  .App .App-header {
+    background-color: #171a21;
+    width: 100%;
+    height: 60px;
+    color: white; }
+  .App .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 60px;
+    margin: 0 auto; }
+
+.Chat {
+  margin: 0 auto;
+  text-align: center;
+  border: dashed #62BFED 3px;
+  width: 350px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px; }
+  .Chat ul {
+    text-align: left;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0; }
+    .Chat ul li {
+      list-style: none;
+      padding: 10px;
+      background-color: white; }
+    .Chat ul li:nth-child(even) {
+      background-color: #D4EDFA;
+      text-align: right; }
+  .Chat form input {
+    padding: 7px;
+    width: 300px;
+    margin-top: 10px; }
+  .Chat button {
+    background-color: #68D89B;
+    border: none;
+    margin-top: 3px;
+    padding: 8px;
+    width: 90px;
+    color: white;
+    margin-left: 5px; }
+
+.footer {
+  margin-top: 20px;
+  background-color: #171a21;
+  height: 80px;
+  line-height: 80px;
+  color: white; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

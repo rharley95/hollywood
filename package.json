@@ -7,12 +7,17 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "react-scripts": "0.9.5",
+    "sass-loader": "^6.0.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass --include-path scss src/App.scss public/css/style.css",
+    "watch-css": "nodemon -e scc -x \"npm run build-css\""
   }
 }

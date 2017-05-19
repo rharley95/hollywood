@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ChatLog from './ChatLog';
 
 class ChatWindow extends Component {
 
@@ -12,12 +13,14 @@ class ChatWindow extends Component {
   render() {
     return (
       <div>
-        <h3>Stukent Chat App</h3>
+
         <ul>
           {this.state.items.map(item => (
-            <li key={item.id}>{item.text}</li>
+          <li key={item.id}>{item.text}</li>
           ))}
         </ul>
+
+
         <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} value={this.state.text} />
           <button>{'Send'}</button>

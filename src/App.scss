@@ -1,0 +1,105 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+$navColor: rgba(23, 26, 33, 1);
+$lightBlue: #62BFED;
+$lightGreen: #68D89B;
+$chatBlue: #D4EDFA;
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 3em;
+  color: black;
+
+}
+
+.App {
+ background-color: rgba(250, 250, 250, 1);
+ height: 100%;
+ text-align: center;
+
+.App-header {
+  background-color: $navColor;
+  width: 100%;
+  height: 60px;
+  color: white;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 60px;
+  margin: 0 auto;
+
+}
+
+}
+
+.Chat {
+  margin: 0 auto;
+  text-align: center;
+  border: dashed $lightBlue 3px;
+  width: 350px;
+  padding: 20px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+
+
+  ul{
+    text-align: left;
+    width: 98%;
+    margin: 0 auto;
+    padding: 0;
+
+    li{
+      list-style: none;
+      padding: 10px;
+      background-color: white;
+    }
+
+    li:nth-child(even){
+      background-color: $chatBlue;
+      text-align: right;
+      }
+    }
+
+    form {
+
+
+      input {
+        padding: 7px;
+        width: 300px;
+        margin-top: 10px;
+      }
+    }
+
+    button {
+      background-color: $lightGreen;
+      border: none;
+      margin-top: 3px;
+      padding: 8px;
+      width: 90px;
+      color: white;
+      margin-left: 5px;
+    }
+
+
+
+
+}
+.footer {
+  margin-top: 20px;
+  background-color: $navColor;
+  height: 80px;
+  line-height: 80px;
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
